@@ -1,0 +1,68 @@
+.hero
+{
+    background-image: linear-gradient(rgba(0, 9, 17, 0.384)), url(../css/assets/cerro\ 7\ pequeño.jpg) ;
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.2rem;
+    
+}
+
+.text
+{
+    background-color: rgba(17, 11, 0, 0.212);
+    padding: 1rem 2vh;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+min-width: 0;
+}
+
+.hero-title
+{
+    font-size: 5rem;
+    margin: 2rem 0;
+    font-family: var(--title-font);
+}
+
+.bttn-hero
+{
+    background-color: inherit;
+    color: var(--text-color);
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: 2px solid var(--background-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.bttn-hero:hover
+{
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px)
+{
+    .text
+    {
+        padding: 1rem 1vh
+    }
+}
+
+@media (max-width: 480px)
+{
+    .hero-title
+    {
+        font-size: 3rem;
+    }
+}

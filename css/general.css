@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root
+{
+--text-color: rgb(245, 185, 20);
+--background-color: rgb(143, 15, 68);
+--title-font:  'Ewert', sans-serif;
+--alternative-color: rgb(158, 60, 18);
+}
+
+body
+{
+    display: flex;
+    flex-direction:column;
+    background-color:rgb(54, 102, 9);
+    color:rgb(235, 175, 10);
+    min-height: 100vh;
+    line-height:1,6;
+}
+
+header
+{
+    background-color: var(--background-color);
+    position:sticky;
+     z-index: 5;
+     top:0;
+     padding: 2.3rem;
+}
+
+
+.nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.logo
+{
+    
+    font-size:3rem;
+    font-weight: 500; 
+    font-family: var(--title-font);
+
+}
+
+.menus
+{
+    transition: all 0.2s ease-in-out;
+}
+
+.list
+{
+    display:flex;
+    list-style: none;
+    gap:4rem;
+    padding: 1rem;
+    min-width: 0;
+    max-width: 100;
+    font-size: 1.5rem;
+}
+ 
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer
+{
+    background-color: var(--background-color);
+    margin-top:auto;
+    text-align: center;
+justify-items: center;
+padding:2rem;
+}
+
+footer > ul
+{
+    display: flex;
+    list-style:none;
+    gap:3rem;
+}
+
+@media (max-width: 768px)
+{
+    .nav
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    .list  
+    {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .footer-list
+     {flex-direction: column;
+        gap: 1.2rem;
+}
+    }
+
+.menus:hover
+    {
+        color: var(--text-color);
+        transform: scale(1.1);
+        color: var(--alternative-color);
+    }
+
+    
