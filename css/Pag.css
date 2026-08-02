@@ -1,0 +1,40 @@
+.prov-main
+{
+    background-image: linear-gradient(rgba(0, 9, 17, 0.384)), url(../css/assets/img/Puacara.webp); 
+    width: 100%;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    
+    padding: 2rem;
+    gap: 1.2rem;
+    
+}
+
+.prov-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0  2rem;
+    padding: 22rem 2rem;
+    min-width: 0;
+    justify-content: center;
+    align-items: center;
+    background-color:red;
+    top: 0;
+
+}
+
+.prov-b
+{
+    background-color: var(--header-color);
+    max-width: 60vw;
+    min-width: 0;
+    margin: 0 auto;
+    max-height: 80vw;
+    background-color:red;
+    font-size: 33rem;
+    display: flex;
+    flex-direction: column;
+}

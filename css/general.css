@@ -7,24 +7,27 @@
 :root
 {
 --text-color: rgb(245, 185, 20);
---background-color: rgb(143, 15, 68);
+--header-color: rgb(143, 15, 68);
 --title-font:  'Ewert', sans-serif;
 --alternative-color: rgb(158, 60, 18);
+--background-color: rgb(236, 223, 192);
+--bttn-border: rgb(101, 72, 61);
+--bttn-color: rgb(28,87,73);
 }
 
 body
 {
     display: flex;
     flex-direction:column;
-    background-color:rgb(54, 102, 9);
+    background-color:var(--background-color);
     color:rgb(235, 175, 10);
     min-height: 100vh;
-    line-height:1,6;
+    line-height: 1.6;
 }
 
 header
 {
-    background-color: var(--background-color);
+    background-color: var(--header-color);
     position:sticky;
      z-index: 5;
      top:0;
@@ -73,9 +76,14 @@ a
     color: inherit;
 }
 
+h1
+{
+    font-family: var(--title-font);
+}
+
 footer
 {
-    background-color: var(--background-color);
+    background-color: var(--header-color);
     margin-top:auto;
     text-align: center;
 justify-items: center;
@@ -96,14 +104,20 @@ footer > ul
         flex-direction: column;
         text-align: center;
     }
+    .logo
+    {
+        font-size: 2.5rem;
+    }
     .list  
     {
-        flex-direction: column;
-        gap: 1.2rem;
+        flex-direction: row;
+        gap: 0.5rem;
+        font-size: 0.8rem;
     }
     .footer-list
-     {flex-direction: column;
+     {flex-direction: row;
         gap: 1.2rem;
+        font-size: 0.8rem;
 }
     }
 
@@ -114,4 +128,12 @@ footer > ul
         color: var(--alternative-color);
     }
 
+    @media (max-width: 1260px)
+    {
+        footer
+        {
+            
+        margin-top: auto
+        }
+    }
     

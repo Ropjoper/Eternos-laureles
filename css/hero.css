@@ -1,6 +1,6 @@
 .hero
 {
-    background-image: linear-gradient(rgba(0, 9, 17, 0.384)), url(../css/assets/cerro\ 7\ pequeño.jpg) ;
+    background-image: linear-gradient(rgba(0, 9, 17, 0.384)), url(../css/assets/img/cerro\ 7\ pequeño.jpg ) ;
     width: 100%;
     min-height: 80vh;
     background-size: cover;
@@ -22,6 +22,7 @@
     border-radius: 2rem;
     font-size: 1.3rem;
 min-width: 0;
+
 }
 
 .hero-title
@@ -35,13 +36,16 @@ min-width: 0;
 {
     background-color: inherit;
     color: var(--text-color);
-    margin: 2rem 0;
-    padding: 1rem 2rem;
-    border-radius: 4rem;
-    font-size: 1.5rem;
+    margin: 2rem 0.5rem;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
     text-decoration: none;
-    border: 2px solid var(--background-color);
+    border: 3px solid var(--background-color);
     transition: all 0.5s ease-in-out;
+    display: inline-block;
+
+
 }
 
 .bttn-hero:hover
