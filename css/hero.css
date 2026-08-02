@@ -50,7 +50,7 @@ min-width: 0;
 
 .bttn-hero:hover
 {
-    background-color: var(--text-color);
+    background-color: var(--bttn-color);
     color: var(--background-color);
     transform: scale(1.1);
 }

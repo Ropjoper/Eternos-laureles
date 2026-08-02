@@ -111,6 +111,14 @@ main
     padding: 0rem 0 9rem
 }
 
+.menus:hover
+    {
+        color: var(--text-color);
+        transform: scale(1.1);
+        color: var(--alternative-color);
+    }
+
+
 @media (max-width: 768px)
 {
     .nav
@@ -136,12 +144,6 @@ main
 }
     }
 
-.menus:hover
-    {
-        color: var(--text-color);
-        transform: scale(1.1);
-        color: var(--alternative-color);
-    }
 
     @media (max-width: 1260px)
     {

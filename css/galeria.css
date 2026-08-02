@@ -2,7 +2,7 @@
 {
     height: 280px;
     width: 400px;
-    transition: all 0.3s ease-in; 
+    transition: all 0.3s; 
 }
 
 .div-gal
@@ -14,8 +14,9 @@
     flex-wrap: wrap;
 }
 
-.gal-img :hover
+.gal-img:hover
 {
- transform: scale(1.2);
+    
+    transform: scale(1.2);
 
 }
