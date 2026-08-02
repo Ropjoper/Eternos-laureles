@@ -1,0 +1,21 @@
+.gal-img
+{
+    height: 280px;
+    width: 400px;
+    transition: all 0.3s ease-in; 
+}
+
+.div-gal
+{
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gal-img :hover
+{
+ transform: scale(1.2);
+
+}
