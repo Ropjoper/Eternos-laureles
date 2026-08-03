@@ -1,34 +1,28 @@
-.main-section {
-    max-width: 80vw;
-    min-width: 0;
-    margin: 0 auto;
-    max-height: 100vw;
-    flex: 1;
-}
+
 
 .card-grid {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 5rem ;
-    padding:  2rem;
+    padding:  3rem 0 0;
     min-width: 0;
     
     
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--header-color);
     max-width: 300px;
     border-radius: 2rem;
     box-shadow: 0 10px 8px rgba(235, 155, 36, 0.459);
-    min-width: 0;
     font-size: 1.2rem;
     gap: 3rem 0 0;
     text-align: center;
-    height: 30rem;
+    max-height: 29rem;
     transition: all 0.3s ease-out ;
 }
 .card-img {
@@ -40,6 +34,12 @@
     object-fit: fill;
     max-height: 10.5rem;
 }
+.card-text
+{
+    padding: 0rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
 
 .bttn-r
 {
@@ -48,10 +48,10 @@
     font-size: 1.2rem;
     border: 3px solid var(--bttn-border);
     align-items: center;
-    justify-content: center;
     border-radius: 2rem;
-    margin: 1.5rem 0 0;
-    padding: 0.7rem;
+    margin:  0 0;
+    transition: all 0.2s;
+    
 }
 
 .bttn-r:hover

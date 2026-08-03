@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ewert&family=Faculty+Glyphic&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Ewert&family=Faculty+Glyphic&family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
 </head>
     
 
@@ -24,13 +27,82 @@
      </nav>
     </header>
 
-    <footer>
-        <ul class="footer-list">
-        <li class="menus"><a href="index.html">Inicio</a></li>
-        <li class="menus"><a href="Provincias.html">Provincias</a></li>
-        <li class="menus"><a href="Participa.html">Participa</a></li>
-        <li class="menus"><a href="Galeria.html">Galeria</a></li>
-        </ul>
-    </footer>
+
+        <div class="cont"><article class="article-aling"><h1>Ayudanos a expandir este proyecto</h1></article></div>
+
+        <section class="main-section">
+            <form class="formulario">
+                <div class="cuerpo-form">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                    
+                    <div class="cuerpo-form">
+                        <label for="email" >email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                    <div class="cuerpo-form">
+                        <label for="provincias"> ¿De que porvincia nos queres contar?</label>
+                        <select name="provincia" id="provincia" required>
+                        <option value=""disabled selected>Selecciona</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Rio Negro">Rio Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucumán">Tucumán</option>
+                     </select>
+                    </div>
+
+                    <div class="cuerpo-form">
+                        <fieldset><legend>¿Vivis ahí?</legend>
+                    <input type="radio" name="Turista" id="lugareño" required>
+                    <label for="Turista">Si</label> 
+                    <input type="radio" name="Turista" id="turista">
+                    <label for="Turista">No</label>
+                </fieldset>
+                        
+                    </div>
+                    
+                <div class="cuerpo-form">
+                      <label for="experiencia">Contanos tus experiencias</label>
+
+                      <textarea name="experiencia" id="experiencia" cols="30" rows="10" required></textarea>
+                </div>
+
+                <div>
+                    <label for="tiempo">¿Cuando ocurrió? (aproximado)</label>
+                    <input type="date" name="tiempo" id="tiempo" required>
+                </div>
+                
+                <div >
+                    <button type="submit" class="bttn-form"> Enviar </button>
+                    <button type="reset" class="bttn-form"> Limpiar formulario</button>
+                </div>
+                
+
+            </form>
+        </section>
+    </main>
+
+    
 </body>
 </html>
